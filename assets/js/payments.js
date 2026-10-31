@@ -25,7 +25,7 @@ const PAYMENT_SETTINGS = {
   // ссылки вида payBaseUrl + id товара.
   payBaseUrl: 'https://example.com/pay/',
   receiverName: 'ООО «Правовой Стандарт»',
-  sbpPhone: '+7 (900) 000-00-00', // телефон для связи по чекам (замените)
+  sbpPhone: '+7 (964) 993-65-27', // телефон для связи по чекам
 };
 
 const PRODUCTS = {

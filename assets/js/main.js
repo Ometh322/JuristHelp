@@ -13,6 +13,10 @@
     return value.toLocaleString('ru-RU') + ' ' + (window.PAYMENT_SETTINGS ? PAYMENT_SETTINGS.currency : '₽');
   }
 
+  function formatPriceFrom(value) {
+    return 'от ' + formatPrice(value);
+  }
+
   function toast(message) {
     let el = document.querySelector('.toast');
     if (!el) {
@@ -110,8 +114,7 @@
             <circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>
           </svg>
           <span>QR-код статичный: в приложении банка введите сумму
-          <b class="js-amount">—</b> вручную. Назначение платежа:
-          <b class="js-title">—</b></span>
+          <b class="js-amount">—</b> вручную</span>
         </div>
         <div class="demo-note demo-note--demo" hidden>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0">
@@ -131,7 +134,7 @@
           </div></div>
           <div class="pay-step"><div class="pay-step__num">3</div><div>
             <b>Пришлите чек — получите код доступа</b>
-            <span>скриншот чека на info@pravo-standart.ru или на телефон +7 (900) 000-00-00 — вышлем код, он откроет материал на этом устройстве</span>
+            <span>скриншот чека на info@pravo-standart.shop или на телефон +7 (964) 993-65-27 — вышлем код, он откроет материал на этом устройстве</span>
           </div></div>
         </div>
         <div class="modal__actions">
@@ -152,10 +155,9 @@
     const url = getPayUrl(id);
     modal.querySelector('.modal__title').textContent = p.title;
     const priceEl = modal.querySelector('.price-big');
-    priceEl.innerHTML = formatPrice(p.price) + (p.oldPrice ? '<s>' + formatPrice(p.oldPrice) + '</s>' : '');
+    priceEl.innerHTML = formatPriceFrom(p.price) + (p.oldPrice ? '<s>' + formatPrice(p.oldPrice) + '</s>' : '');
     modal.querySelector('.js-pay-link').textContent = url;
     modal.querySelector('.amount-note .js-amount').textContent = formatPrice(p.price);
-    modal.querySelector('.amount-note .js-title').textContent = p.title;
     modal.querySelector('.demo-note--demo').hidden = !isDemoUrl(url);
     renderQr(modal.querySelector('[data-qr-big]'), url, 200);
     modal.classList.add('is-open');
@@ -236,12 +238,12 @@
             <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
           </svg>
         </div>
-        <h3>Полная версия статьи — ${formatPrice(p.price)}</h3>
+        <h3>Полная версия статьи — ${formatPriceFrom(p.price)}</h3>
         <p>Вы прочитали бесплатное введение. Полная версия содержит пошаговый алгоритм,
            ссылки на статьи законов, типичные ошибки и готовые формулировки.
-           Оплатите по QR-коду (СБП) и пришлите чек на info@pravo-standart.ru —
+           Оплатите по QR-коду (СБП) и пришлите чек на info@pravo-standart.shop —
            в ответе получите код доступа, который откроет текст на этом устройстве.</p>
-        <button class="btn btn--gold" data-buy="${id}">Оплатить ${formatPrice(p.price)} по QR-коду</button>
+        <button class="btn btn--gold" data-buy="${id}">Оплатить ${formatPriceFrom(p.price)} по QR-коду</button>
         <div class="paywall__or">уже оплачивали?</div>
         <form class="code-form">
           <input type="text" placeholder="Код из письма после оплаты" aria-label="Код доступа">

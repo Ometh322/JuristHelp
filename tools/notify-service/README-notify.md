@@ -33,14 +33,17 @@ sudo systemctl daemon-reload && sudo systemctl enable --now jurist-notify
 
 ## Включить реальную отправку писем
 
-Заполните SMTP-параметры в `/etc/jurist-notify.env` (данные ящика
-info@pravo-standart.shop: хост, порт, логин, пароль/пароль приложения) и
-перезапустите службу: `sudo systemctl restart jurist-notify`.
+SMTP-параметры заполняются в `/etc/jurist-notify.env` на ВМ и применяются
+перезапуском: `sudo systemctl restart jurist-notify`.
 
-Для Яндекс 360 (почта для домена): `SMTP_HOST=smtp.yandex.ru`, `SMTP_PORT=465`,
-`SMTP_USER=info@pravo-standart.shop`, `SMTP_PASS` — «пароль приложения»
-(создаётся в настройках Яндекс ID: Безопасность → Пароли приложений).
-Для reg.ru: `SMTP_HOST=smtp.reg.ru`.
+Для reg.ru (почта на хостинге, как у этого сайта):
+- `SMTP_HOST` — **персональный сервер хостинг-аккаунта** вида `smXX.hosting.reg.ru`
+  (виден в панели хостинга; для этого сайта — `sm46.hosting.reg.ru`).
+  ВАЖНО: `smtp.reg.ru` не существует, а `mx1.hosting.reg.ru` — только входящая
+  почта, AUTH на нём не работает;
+- `SMTP_PORT=465` (SSL) или `587` (STARTTLS);
+- `SMTP_USER` — полный адрес ящика, `SMTP_PASS` — пароль ящика;
+- IMAP того же ящика (для проверки доставки): `smXX.hosting.reg.ru:993`.
 
 ## Проверка
 

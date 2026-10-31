@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Правовой Стандарт — юридические консультации, статьи, шаблоны договоров и курсы</title>
+  <meta name="description" content="Юридические консультации, платные статьи по праву, шаблоны договоров и обучающие курсы. Оплата по QR-коду за минуту.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f2140'/%3E%3Ctext x='50' y='66' font-family='Georgia' font-size='42' font-weight='bold' text-anchor='middle' fill='%23c7a253'%3EПС%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Верхняя полоса -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__left">
+        <span class="hide-m">Пн–Пт 9:00–19:00 (МСК) · работаем по всей России</span>
+        <span class="hide-m">Онлайн-заявки — круглосуточно</span>
+      </div>
+      <div><a href="mailto:info@pravo-standart.ru">info@pravo-standart.ru</a></div>
+    </div>
+  </div>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <span class="logo__badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.38-1 1.72V7h4.5A2.5 2.5 0 0 1 20 9.5v.58c.59.34 1 .98 1 1.72a2 2 0 0 1-4 0c0-.74.41-1.38 1-1.72V9.5a.5.5 0 0 0-.5-.5H13v7.58c.59.34 1 .98 1 1.72a2 2 0 0 1-4 0c0-.74.41-1.38 1-1.72V9H7.5a.5.5 0 0 0-.5.5v.58c.59.34 1 .98 1 1.72a2 2 0 0 1-4 0c0-.74.41-1.38 1-1.72V9.5A2.5 2.5 0 0 1 7.5 7H11V5.72A2 2 0 0 1 12 2zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm14 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-7 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0-16a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+        </span>
+        <span>
+          <span class="logo__name">Правовой Стандарт</span><br>
+          <span class="logo__tag">юридические услуги</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a data-page="index" href="index.html">Главная</a>
+        <a data-page="uslugi" href="uslugi.html">Услуги</a>
+        <a data-page="stati" href="stati.html">Статьи</a>
+        <a data-page="shablony" href="shablony.html">Шаблоны</a>
+        <a data-page="kursy" href="kursy.html">Курсы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header__cta">
+        <a class="header__phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+        <a class="btn btn--gold btn--sm" href="#zayavka">Заказать консультацию</a>
+        <button class="burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="hero__badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5.25 3.4 10.16 8 11 4.6-.84 8-5.75 8-11V5l-8-3zm-1.2 13.5-3.2-3.2 1.4-1.4 1.8 1.8 4.4-4.4 1.4 1.4-5.8 5.8z"/></svg>
+          Практикующие юристы · 12 лет опыта
+        </span>
+        <h1>Юридическая помощь, <em>которой доверяют</em> деньги, время и репутация</h1>
+        <p class="hero__lead">Консультации, документы и обучение по гражданскому, трудовому и договорному праву. Оплата по QR-коду — без звонков и лишних шагов.</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#zayavka">Получить консультацию</a>
+          <a class="btn btn--ghost-light" href="uslugi.html">Услуги и цены</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><b>12 лет</b><span>практики в судах</span></div>
+          <div class="hero__stat"><b>2 400+</b><span>решённых дел</span></div>
+          <div class="hero__stat"><b>93%</b><span>дел в пользу клиента</span></div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <h3>Задайте вопрос юристу</h3>
+        <p>Ответим в течение 30 минут в рабочее время</p>
+        <form class="hero-form" data-demo-form>
+          <div class="hero-form__row">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Телефон или Telegram" required>
+            <textarea name="question" rows="3" placeholder="Коротко опишите ситуацию" required></textarea>
+            <button class="btn btn--navy btn--block" type="submit">Отправить вопрос</button>
+          </div>
+        </form>
+        <div class="form-success">✓ Заявка отправлена! Юрист свяжется с вами в ближайшее время.</div>
+        <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Направления -->
+  <section class="section" id="uslugi-kratko">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Направления</span>
+        <h2>С какими вопросами мы помогаем</h2>
+        <p>От разовой консультации до полного сопровождения сделки или судебного процесса.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card feature">
+          <div class="card__body">
+            <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+            <h3 class="card__title">Договорная работа</h3>
+            <p class="card__text">Составление, проверка и сопровождение договоров. Найдём риски до того, как они станут убытками.</p>
+            <div class="card__meta"><span class="chip">Для бизнеса</span><span class="chip">Для частных лиц</span></div>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="card__body">
+            <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 7l4 8H1l2-4M21 7l-4 8h6l-2-4"/><path d="M8 21h8"/></svg></div>
+            <h3 class="card__title">Судебные споры</h3>
+            <p class="card__text">Претензии, иски, представительство в суде первой и апелляционной инстанций. Работаем за результат.</p>
+            <div class="card__meta"><span class="chip chip--gold">93% дел выиграно</span></div>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="card__body">
+            <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <h3 class="card__title">Трудовое право</h3>
+            <p class="card__text">Споры с работодателем, взыскание зарплаты, защита при увольнении. Консультируем и HR, и сотрудников.</p>
+            <div class="card__meta"><span class="chip">Работники</span><span class="chip">Работодатели</span></div>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="card__body">
+            <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
+            <h3 class="card__title">Защита прав потребителей</h3>
+            <p class="card__text">Возврат товаров, неустойки, споры с застройщиками, туроператорами и магазинами.</p>
+            <div class="card__meta"><span class="chip chip--ok">Без пошлины для потребителей</span></div>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="card__body">
+            <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <h3 class="card__title">Право бизнеса</h3>
+            <p class="card__text">Регистрация ИП и ООО, абонентское обслуживание, претензионная работа, проверка контрагентов.</p>
+            <div class="card__meta"><span class="chip">От 24 900 ₽/мес</span></div>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="card__body">
+            <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
+            <h3 class="card__title">Обучение и материалы</h3>
+            <p class="card__text">Платные статьи-разборы, шаблоны договоров и видеокурсы — чтобы решать типовые задачи самостоятельно.</p>
+            <div class="card__meta"><span class="chip chip--gold">Оплата по QR</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:36px">
+        <a class="btn btn--navy" href="uslugi.html">Все услуги и цены</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Популярные статьи -->
+  <section class="section" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Библиотека знаний</span>
+        <h2>Платные статьи-разборы от практикующих юристов</h2>
+        <p>Практические материалы с алгоритмами действий, ссылками на нормы и готовыми формулировками. Доступ открывается по коду сразу после оплаты по QR-коду.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card">
+          <div class="article-card__cover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Как расторгнуть договор оказания услуг и вернуть деньги</h3>
+            <p class="card__text">Законный отказ от услуги, претензия, возврат оплаты и неустойка: алгоритм на 30 дней.</p>
+            <div class="card__meta"><span class="chip chip--gold">Договорное право</span><span class="chip">12 мин чтения</span></div>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>249 ₽</b><span class="pay-box__unit">разовый доступ навсегда</span></div>
+              <a class="btn btn--ghost btn--sm" href="stati/kak-rastorgnut-dogovor-okazaniya-uslug.html">Читать фрагмент</a>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="st-1"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>Наведите камеру — откроется оплата по СБП</div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="article-card__cover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 7l4 8H1l2-4M21 7l-4 8h6l-2-4"/><path d="M8 21h8"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Взыскиваем зарплату через суд: пошаговый алгоритм</h3>
+            <p class="card__text">От жалобы в трудовую инспекцию до исполнительного листа: документы, сроки, пошлины.</p>
+            <div class="card__meta"><span class="chip chip--gold">Трудовое право</span><span class="chip">15 мин чтения</span></div>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>299 ₽</b><span class="pay-box__unit">разовый доступ навсегда</span></div>
+              <a class="btn btn--ghost btn--sm" href="stati/vzyskanie-zarplaty-cherez-sud.html">Читать фрагмент</a>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="st-2"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>Наведите камеру — откроется оплата по СБП</div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="article-card__cover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Защита прав потребителей: как взыскать неустойку</h3>
+            <p class="card__text">Считаем неустойку по закону о защите прав потребителей, готовим претензию и иск.</p>
+            <div class="card__meta"><span class="chip chip--gold">Потребители</span><span class="chip">14 мин чтения</span></div>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>299 ₽</b><span class="pay-box__unit">разовый доступ навсегда</span></div>
+              <a class="btn btn--ghost btn--sm" href="stati/zashita-prav-potrebiteley-neustoyka.html">Читать фрагмент</a>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="st-5"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>Наведите камеру — откроется оплата по СБП</div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:36px">
+        <a class="btn btn--navy" href="stati.html">Вся библиотека статей</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Шаблоны -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Шаблоны договоров</span>
+        <h2>Готовые документы за пару минут</h2>
+        <p>Шаблоны, которые юристы нашей команды используют в ежедневной практике. Форматы DOCX и PDF, с инструкцией по заполнению.</p>
+      </div>
+      <div class="grid grid--4">
+        <article class="card">
+          <div class="card__body">
+            <div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+            <h3 class="card__title">Договор оказания услуг</h3>
+            <p class="card__text">Универсальный шаблон под услуги физлиц и компаний. 9 страниц, 2 варианта ответственности.</p>
+            <div class="card__meta"><span class="chip">DOCX + PDF</span></div>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>590 ₽</b></div>
+              <button class="btn btn--navy btn--sm" data-buy="t-uslugi">Купить</button>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="t-uslugi"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>После оплаты пришлите чек — вышлем файлы</div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></div>
+            <h3 class="card__title">Договор аренды квартиры</h3>
+            <p class="card__text">Для собственников и жильцов: залог, коммунальные, расторжение, опись имущества.</p>
+            <div class="card__meta"><span class="chip">DOCX + PDF</span></div>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>690 ₽</b></div>
+              <button class="btn btn--navy btn--sm" data-buy="t-arenda">Купить</button>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="t-arenda"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>После оплаты пришлите чек — вышлем файлы</div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <h3 class="card__title">Трудовой договор</h3>
+            <p class="card__text">Соответствует ТК РФ: испытательный срок, оплата труда, материальная ответственность.</p>
+            <div class="card__meta"><span class="chip">DOCX + PDF</span></div>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>590 ₽</b></div>
+              <button class="btn btn--navy btn--sm" data-buy="t-trudovoy">Купить</button>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="t-trudovoy"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>После оплаты пришлите чек — вышлем файлы</div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="3.5"/><path d="M2.5 21v-1.5a5 5 0 0 1 5-5h3a5 5 0 0 1 5 5V21"/><path d="M17 3.5a3.5 3.5 0 0 1 0 7M21.5 21v-1.5a5 5 0 0 0-3.5-4.77"/></svg></div>
+            <h3 class="card__title">Комплект: все 8 шаблонов</h3>
+            <p class="card__text">Услуги, аренда, подряд, поставка, NDA, займ, ДКП авто, трудовой — со скидкой 25%.</p>
+            <div class="card__meta"><span class="chip chip--gold">Выгодно</span><span class="chip">DOCX + PDF</span></div>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>3 900 ₽</b><s>5 220 ₽</s></div>
+              <button class="btn btn--navy btn--sm" data-buy="t-komplekt">Купить</button>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="t-komplekt"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>После оплаты пришлите чек — вышлем файлы</div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:36px">
+        <a class="btn btn--navy" href="shablony.html">Все шаблоны договоров</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Курсы -->
+  <section class="section" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Обучение</span>
+        <h2>Курсы, после которых юрист нужен реже</h2>
+        <p>Записанные видеокурсы с материалами, чек-листами и разбором кейсов. Доступ навсегда, оплата по QR-коду.</p>
+      </div>
+      <div class="grid grid--2">
+        <article class="card">
+          <div class="card__body">
+            <div class="card__meta"><span class="chip chip--gold">Хит продаж</span><span class="chip">12 уроков · 9 часов видео</span></div>
+            <h3 class="card__title" style="font-size:21px">«Договорная работа для бизнеса»</h3>
+            <p class="card__text">Как составлять, проверять и сопровождать договоры так, как это делают юристы компаний. Практика на реальных документах, готовые формулировки рисковых пунктов.</p>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>12 900 ₽</b><s>15 900 ₽</s><span class="pay-box__unit">доступ навсегда</span></div>
+              <a class="btn btn--ghost btn--sm" href="kursy.html">Программа курса</a>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="k-dogovory"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>После оплаты пришлите чек — откроем доступ</div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <div class="card__meta"><span class="chip">10 уроков · 7 часов видео</span></div>
+            <h3 class="card__title" style="font-size:21px">«Как выиграть суд без юриста»</h3>
+            <p class="card__text">От претензии до исполнительного листа: как собрать доказательства, составить иск, вести себя в заседании и получить деньги. Для потребителей, работников и должников.</p>
+          </div>
+          <div class="pay-box">
+            <div class="pay-box__row">
+              <div class="pay-box__price"><b>6 900 ₽</b><span class="pay-box__unit">доступ навсегда</span></div>
+              <a class="btn btn--ghost btn--sm" href="kursy.html">Программа курса</a>
+            </div>
+            <div class="qr-inline" role="button" tabindex="0">
+              <div data-qr="k-sud"></div>
+              <div class="qr-inline__text"><b>Оплата по QR-коду</b>После оплаты пришлите чек — откроем доступ</div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:36px">
+        <a class="btn btn--navy" href="kursy.html">Все обучающие курсы</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Почему мы</span>
+        <h2>Шесть причин обратиться к нам</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card feature"><div class="card__body">
+          <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3 class="card__title">Ответ за 30 минут</h3>
+          <p class="card__text">Заявки обрабатываем в течение получаса в рабочее время — без «мы вам перезвоним» на несколько дней.</p>
+        </div></div>
+        <div class="card feature"><div class="card__body">
+          <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5.25 3.4 10.16 8 11 4.6-.84 8-5.75 8-11V5l-8-3z"/></svg></div>
+          <h3 class="card__title">Фиксированные цены</h3>
+          <p class="card__text">Стоимость услуг и материалов указана сразу — без «зависит от сложности» после десятка вопросов.</p>
+        </div></div>
+        <div class="card feature"><div class="card__body">
+          <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3 class="card__title">Конфиденциальность</h3>
+          <p class="card__text">Документы и переписка защищены. Подписываем NDA по запросу — даже до начала работы.</p>
+        </div></div>
+        <div class="card feature"><div class="card__body">
+          <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="M22 4 12 14l-3-3"/></svg></div>
+          <h3 class="card__title">Судебная практика</h3>
+          <p class="card__text">93% завершённых дел — в пользу клиентов. Опыт в арбитражных судах и судах общей юрисдикции.</p>
+        </div></div>
+        <div class="card feature"><div class="card__body">
+          <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
+          <h3 class="card__title">Готовые решения</h3>
+          <p class="card__text">Шаблоны договоров, статьи-разборы и курсы решают типовые задачи за 249 ₽ вместо консультации.</p>
+        </div></div>
+        <div class="card feature"><div class="card__body">
+          <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 7l4 8H1l2-4M21 7l-4 8h6l-2-4"/><path d="M8 21h8"/></svg></div>
+          <h3 class="card__title">Оплата по QR</h3>
+          <p class="card__text">Любую услугу, статью, шаблон или курс можно оплатить по QR-коду прямо со страницы — за минуту.</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="section" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Отзывы</span>
+        <h2>Что говорят клиенты</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card review"><div class="card__body">
+          <div class="stars">★★★★★</div>
+          <p class="review__text">«Заказывала письменную консультацию по возврату предоплаты за мебель. Получила документ с ссылками на законы и планом действий — через три недели деньги вернули полностью.»</p>
+          <div class="review__author">
+            <div class="review__avatar">ЕК</div>
+            <div><b>Елена К.</b><span>письменная консультация</span></div>
+          </div>
+        </div></div>
+        <div class="card review"><div class="card__body">
+          <div class="stars">★★★★★</div>
+          <p class="review__text">«Взяли абонентское обслуживание для ООО. Договоры теперь проверяет юрист до подписания, за квартал поймали два рискованных пункта на крупную сумму.»</p>
+          <div class="review__author">
+            <div class="review__avatar">АС</div>
+            <div><b>Андрей С.</b><span>абонентское обслуживание</span></div>
+          </div>
+        </div></div>
+        <div class="card review"><div class="card__body">
+          <div class="stars">★★★★★</div>
+          <p class="review__text">«Прошёл курс по договорной работе — и впервые понял, что подписываю. Через месяц сам нашёл в договоре поставки пункт, который обошёлся бы нам в сотни тысяч.»</p>
+          <div class="review__author">
+            <div class="review__avatar">МД</div>
+            <div><b>Марат Д.</b><span>курс «Договорная работа»</span></div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Вопросы и ответы</span>
+        <h2>Частые вопросы</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Как проходит консультация?</summary>
+          <p>Вы оставляете заявку или оплачиваете консультацию по QR-коду. Юрист связывается с вами, изучает документы и ситуацию, даёт правовую оценку и план действий. Устная консультация длится до 45 минут — по телефону, в видеозвонке или в мессенджере.</p>
+        </details>
+        <details>
+          <summary>Как оплатить услугу, статью или курс?</summary>
+          <p>Под каждым товаром на сайте есть QR-код. Наведите камеру — откроется оплата по СБП (карта, СБП или банковское приложение). После оплаты доступ к статье открывается сразу, шаблоны и доступы к курсам направляются на почту.</p>
+        </details>
+        <details>
+          <summary>Статья не открылась после оплаты. Что делать?</summary>
+          <p>Введите код доступа из нашего письма в форму на странице статьи — материал откроется на этом устройстве. Если код не пришёл в течение часа, напишите нам на info@pravo-standart.ru с номером чека: откроем доступ вручную в течение рабочего дня.</p>
+        </details>
+        <details>
+          <summary>Чем шаблоны договоров отличаются от бесплатных из интернета?</summary>
+          <p>Наши шаблоны — это рабочие документы из практики юристов: сбалансированные условия, защита от типовых споров, инструкции по заполнению и пояснения к каждому рисковому пункту. Бесплатные шаблоны часто устаревшие и написаны в пользу одной из сторон.</p>
+        </details>
+        <details>
+          <summary>Вы работаете с другими городами?</summary>
+          <p>Да, мы работаем по всей России: консультации — онлайн, документы — по электронной почте, судебные дела — с представителем или в порядке онлайн-заседаний, которые сейчас проводят большинство судов.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="zayavka">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <span class="kicker" style="color:var(--gold);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase">Бесплатная оценка</span>
+          <h2>Расскажите о ситуации — юрист оценит перспективы бесплатно</h2>
+          <p>Опишите вопрос в двух предложениях. Если это типовая задача, мы честно скажем, что достаточно статьи за 249 ₽ или шаблона договора. Если нужна полноценная работа — сразу назовём стоимость.</p>
+        </div>
+        <form class="contact-form" data-demo-form>
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон или Telegram" required>
+          <select name="topic">
+            <option value="">Тема обращения (необязательно)</option>
+            <option>Консультация юриста</option>
+            <option>Договор / документы</option>
+            <option>Судебный спор</option>
+            <option>Трудовой вопрос</option>
+            <option>Проблема с оплатой на сайте</option>
+          </select>
+          <button class="btn btn--gold btn--block" type="submit">Получить оценку бесплатно</button>
+          <div class="form-success">✓ Заявка отправлена! Ответим в течение 30 минут в рабочее время.</div>
+          <p class="form-note" style="color:rgba(255,255,255,.6)">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a class="logo" href="index.html" style="align-items:center">
+            <span class="logo__badge" style="background:rgba(199,162,83,.15)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.38-1 1.72V7h4.5A2.5 2.5 0 0 1 20 9.5v.58c.59.34 1 .98 1 1.72a2 2 0 0 1-4 0c0-.74.41-1.38 1-1.72V9.5a.5.5 0 0 0-.5-.5H13v7.58c.59.34 1 .98 1 1.72a2 2 0 0 1-4 0c0-.74.41-1.38 1-1.72V9H7.5a.5.5 0 0 0-.5.5v.58c.59.34 1 .98 1 1.72a2 2 0 0 1-4 0c0-.74.41-1.38 1-1.72V9.5A2.5 2.5 0 0 1 7.5 7H11V5.72A2 2 0 0 1 12 2zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm14 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-7 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0-16a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+            </span>
+            <span><span class="logo__name" style="color:#fff">Правовой Стандарт</span><br><span class="logo__tag" style="color:rgba(255,255,255,.5)">юридические услуги</span></span>
+          </a>
+          <p>Команда практикующих юристов по договорному, трудовому праву и судебным спорам. Консультации, документы, обучение.</p>
+        </div>
+        <div>
+          <h4>Разделы</h4>
+          <ul>
+            <li><a href="uslugi.html">Услуги и цены</a></li>
+            <li><a href="stati.html">Платные статьи</a></li>
+            <li><a href="shablony.html">Шаблоны договоров</a></li>
+            <li><a href="kursy.html">Обучающие курсы</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Клиентам</h4>
+          <ul>
+            <li><a href="#faq">Вопросы и ответы</a></li>
+            <li><a href="mailto:info@pravo-standart.ru">Проблема с оплатой</a></li>
+            <li><a href="#zayavka">Бесплатная оценка ситуации</a></li>
+            <li><a href="tel:+79000000000">Позвонить юристу</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h4>Контакты</h4>
+          <div>
+            <b>Телефон:</b> <a href="tel:+79000000000">+7 (900) 000-00-00</a><br>
+            <b>Почта:</b> <a href="mailto:info@pravo-standart.ru">info@pravo-standart.ru</a><br>
+            <b>Часы работы:</b> Пн–Пт, 9:00–19:00 (МСК)
+          </div>
+          <p style="margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.5)">Информация на сайте не является публичной офертой и не заменяет консультацию юриста по вашему конкретному делу.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container" style="padding:0">
+          <span>© <span class="js-year">2026</span> «Правовой Стандарт». Все права защищены.</span>
+          <span>Оплата по QR через СБП · настройки платежей — в assets/js/payments.js</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/vendor/qrcode.min.js"></script>
+  <script src="assets/js/payments.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

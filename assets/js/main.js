@@ -28,6 +28,19 @@
     el.__timer = setTimeout(() => el.classList.remove('is-visible'), 3200);
   }
 
+  /* ---------- Уведомления владельцу (служба на сервере, /api/notify) ----------
+     На локальной машине (localhost) уведомления отключены — там нет бэкенда. */
+  function notifyOwner(type, subject, body) {
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+    try {
+      fetch('/api/notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: type, subject: subject, body: body }),
+      }).catch(function () {});
+    } catch (e) { /* уведомление не должно ломать интерфейс */ }
+  }
+
   /* ---------- Шапка: тень при скролле ---------- */
   const header = document.querySelector('.header');
   if (header) {
@@ -147,6 +160,18 @@
     renderQr(modal.querySelector('[data-qr-big]'), url, 200);
     modal.classList.add('is-open');
     document.body.style.overflow = 'hidden';
+
+    /* уведомить владельца о попытке оплаты — один раз на товар за сессию */
+    try {
+      const key = 'pv_notified_' + id;
+      if (!sessionStorage.getItem(key)) {
+        sessionStorage.setItem(key, '1');
+        notifyOwner('payment_open', p.title,
+          'Открыто окно оплаты\nТовар: ' + p.title +
+          '\nЦена: от ' + p.price + ' \u20BD' +
+          '\nСтраница: ' + location.href);
+      }
+    } catch (e) {}
   }
 
   function closePayModal() {
@@ -253,10 +278,16 @@
     });
   });
 
-  /* ---------- Демо-формы заявок (без бэкенда) ---------- */
-  document.querySelectorAll('form[data-demo-form]').forEach((form) => {
+  /* ---------- Формы заявок: уведомление владельцу + подтверждение ---------- */
+  document.querySelectorAll('form[data-lead-form]').forEach((form) => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      const lines = [];
+      new FormData(form).forEach((value, key) => {
+        if (value) lines.push(key + ': ' + value);
+      });
+      notifyOwner('lead', 'Новая заявка с сайта',
+        'Новая заявка с сайта\n' + lines.join('\n') + '\nСтраница: ' + location.href);
       const success = form.parentElement.querySelector('.form-success') || form.querySelector('.form-success');
       form.reset();
       if (success) { form.style.display = 'none'; success.classList.add('is-visible'); }

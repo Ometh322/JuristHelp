@@ -600,6 +600,8 @@ h1, h2, h3, .title-serif {
   line-height: 1.5;
 }
 
+.demo-note[hidden] { display: none; }
+
 .modal__actions { display: grid; gap: 10px; }
 .link-row {
   display: flex;

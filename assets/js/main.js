@@ -6,8 +6,6 @@
 (function () {
   'use strict';
 
-  const DEMO_HOST = 'example.com'; // если ссылка оплаты ведёт сюда — работаем в демо-режиме
-
   /* ---------- Хелперы ---------- */
   function formatPrice(value) {
     return value.toLocaleString('ru-RU') + ' ' + (window.PAYMENT_SETTINGS ? PAYMENT_SETTINGS.currency : '₽');
@@ -28,11 +26,6 @@
     el.classList.add('is-visible');
     clearTimeout(el.__timer);
     el.__timer = setTimeout(() => el.classList.remove('is-visible'), 3200);
-  }
-
-  function isDemoUrl(url) {
-    try { return new URL(url).hostname === DEMO_HOST || url.indexOf(DEMO_HOST) !== -1; }
-    catch (e) { return false; }
   }
 
   /* ---------- Шапка: тень при скролле ---------- */
@@ -116,13 +109,6 @@
           <span>QR-код статичный: в приложении банка введите сумму
           <b class="js-amount">—</b> вручную</span>
         </div>
-        <div class="demo-note demo-note--demo" hidden>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0">
-            <path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/>
-          </svg>
-          <span><b>Демо-ссылка.</b> Замените её на реальную в файле
-          <code>assets/js/payments.js</code>.</span>
-        </div>
         <div class="pay-steps">
           <div class="pay-step"><div class="pay-step__num">1</div><div>
             <b>Наведите камеру на QR-код</b>
@@ -158,7 +144,6 @@
     priceEl.innerHTML = formatPriceFrom(p.price) + (p.oldPrice ? '<s>' + formatPrice(p.oldPrice) + '</s>' : '');
     modal.querySelector('.js-pay-link').textContent = url;
     modal.querySelector('.amount-note .js-amount').textContent = formatPrice(p.price);
-    modal.querySelector('.demo-note--demo').hidden = !isDemoUrl(url);
     renderQr(modal.querySelector('[data-qr-big]'), url, 200);
     modal.classList.add('is-open');
     document.body.style.overflow = 'hidden';

@@ -150,21 +150,21 @@ const PRODUCTS = {
   /* ---------- ШАБЛОНЫ ДОГОВОРОВ ---------- */
   't-uslugi': {
     title: 'Шаблон договора оказания услуг (DOCX + PDF)',
-    price: 590,
+    price: 1049,
     oldPrice: null,
     unit: 'за шаблон',
     code: 'DEMO-T1',
   },
   't-arenda': {
     title: 'Шаблон договора аренды квартиры (DOCX + PDF)',
-    price: 690,
+    price: 649,
     oldPrice: null,
     unit: 'за шаблон',
     code: 'DEMO-T2',
   },
   't-trudovoy': {
     title: 'Шаблон трудового договора (DOCX + PDF)',
-    price: 590,
+    price: 549,
     oldPrice: null,
     unit: 'за шаблон',
     code: 'DEMO-T3',
@@ -207,7 +207,7 @@ const PRODUCTS = {
   't-komplekt': {
     title: 'Полный комплект: все 8 шаблонов со скидкой',
     price: 3900,
-    oldPrice: 5220,
+    oldPrice: 6497,
     unit: 'за комплект',
     code: 'DEMO-T9',
   },
